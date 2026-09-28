@@ -1,0 +1,20 @@
+[project]
+name = "rand-question-v4"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Yun Zhou", email = "yun.zhou@mcmaster.ca" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "google-genai>=2.25.0",
+    "streamlit>=1.64.0",
+]
+
+[project.scripts]
+rand-question-v4 = "rand_question_v4.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
