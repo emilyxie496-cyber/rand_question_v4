@@ -50,8 +50,8 @@ if st.button("Generate AI Question"):
     except Exception:
         st.session_state.message = (
             "error",
-            "Couldn't get an AI question. Check that GEMINI_API_KEY is set in "
-            ".streamlit/secrets.toml and try again.",
+            "Couldn't get an AI question. Gemini may be busy, so try again in "
+            "a moment. If it keeps failing, check GEMINI_API_KEY in secrets.",
         )
     else:
         st.session_state.question_list.append(ai_question)
